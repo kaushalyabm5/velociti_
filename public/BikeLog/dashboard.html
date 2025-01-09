@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        *{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        body{
+            margin: 0;
+            background-color: rgb(23, 33, 41);
+            
+        }
+        .main{
+            display: flex;
+            height: 85px;
+            width: 100%;
+            background-color: rgb(46, 56, 62);
+            align-items: center;
+           
+        }
+        .logo{
+            display: flex;
+            height: 85px;
+            width: 200px;
+            background-color: transparent;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .bikelog{
+            cursor: pointer;
+        }
+        .logout{
+            position: absolute;
+            right: 100px;
+            font-weight: 300;
+        }
+        .out{
+            display: flex;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 17px;
+            color: #00ffff;
+            background-color: transparent;
+            border: 1px solid #00ffff;
+            border-radius: 10px;
+            cursor: pointer;
+            
+        }
+        .out:hover{
+            background-color:#00ffff;
+            color: black;
+        }
+        .part1{
+            height: 440px;
+            width: 850px;
+            display: flex;
+            margin-left:100px;
+            
+            margin-top: 30px;
+            border: 2px solid #00ffff;
+            border-radius: 20px;
+            background-color: transparent;
+        }
+        .under-main{
+            display: flex;
+        }
+        .part2{
+            height: 310px;
+            width: 300px;
+            background-color: transparent;
+            margin-left: 50px;
+            margin-top: 30px;
+            margin-right: 100px;
+            display: block;
+            
+        }
+        .maintainance{
+            height: 130px;
+            width: 300px;
+            cursor: pointer;
+            margin-bottom: 50px;
+            border: 2px solid white;
+            border-radius: 20px;
+            background-color: transparent;
+            font-size: 30px;
+            color: white;
+        }
+        .expenses{
+            height: 130px;
+            width: 300px;
+            cursor: pointer;
+            border: 2px solid white;
+            border-radius: 20px;
+            background-color: transparent;
+            font-size: 30px;
+            color: white;
+        }
+        .maintainance:hover{
+            background-color: white;
+            color: black;
+        }
+        .expenses:hover{
+            background-color: white;
+            color: black;
+        }
+        .sub1{
+            height: 440px;
+            width: 405px;
+            background-color: transparent;
+            display: flex;
+            
+        }
+        .sub2{
+            height: 440px;
+            width: 405px;
+            background-color: transparent;
+            display: flex;
+        }
+        .sub1-p1{
+            display: block;
+            padding-left: 20px;
+            color: white;
+        }
+        .sub2-p1{
+            display: block;
+            padding-left: 20px;
+            color: white;
+        }
+        .sub1-p2{
+            display: block;
+            padding-left: 10px;
+            color: #00ffff;
+        }
+        .sub2-p2{
+            display: block;
+            padding-left: 10px;
+            color: #00ffff;
+        }
+        .d{
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="logo">
+            <p class="bikelog">BikeLOG</p>
+        </div>
+
+        <div class="logout">
+            <button class="out">Logout</button>
+        </div>
+    </div>
+
+    <div class="under-main">
+
+    <div class="part1">
+
+        <div class="sub1">
+
+        <div class="sub1-p1">
+            <p class="d">Name:</p>
+            <p class="d">Age:</p>
+            <p class="d">Email:</p>
+            <p class="d">Phone Number:</p>
+            </div>
+
+            <div class="sub1-p2">
+            <p class="d"></p>
+            <p class="d"></p>
+            <p class="d"></p>
+            <p class="d"></p>
+            </div>
+
+        </div>
+
+        <div class="sub2">
+
+        <div class="sub2-p1">
+
+            <p class="d">Model:</p>
+            <p class="d">Engine Type:</p>
+            <p class="d">Engine Capacity:</p>
+            <p class="d">Model Year:</p>
+            <p class="d">Fuel Type:</p>
+            <p class="d">Color:</p>
+
+            </div>
+
+            <div class="sub2-p2">
+            <p class="d"></p>
+            <p class="d"></p>
+            <p class="d"></p>
+            <p class="d"></p>
+            <p class="d"></p>
+            <p class="d"></p>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="part2">
+        <div class="button1">
+            <button class="maintainance">Maintainance Track</button>
+        </div>
+        <div class="button2">
+            <button class="expenses">Expenses Track</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
